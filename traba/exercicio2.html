@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> Minha aula de JS</title>
+    </head>
+    <body>
+        <font class="texto" face="Century gothic" color="green" size"5px"> 
+        <script type="text/javascript">
+            var name = prompt("Insira o nome do aluno")
+            var n1 = parseInt(prompt("Insira a 1º nota"));
+            var n2 = parseInt(prompt("Insira a 2º nota"));
+            var n3 = parseInt(prompt("Insira a 3º nota"));
+            var n4 = parseInt(prompt("Insira a 4ª nota"));
+            var md = parseFloat((n1+n2+n3+n4)/4);
+            if(md >= 0 && md <= 3.0) {
+                document.write("A média do aluno " + name + " é " + md + ", portanto o aluno está retido. <br>");
+            } else if(md >= 3.1 && md <= 5.9) {
+                document.write("A média do aluno " + name + " é " + md + ", portanto o aluno está em exame. <br>");
+            } else if(md >= 6.0 && md <= 10.0) {
+                document.write("A média do aluno " + name + " é " + md + ", portanto o aluno está promovido. <br>");
+            }
+        </script>
+        <font class="texto" face="Century gothic" color="green" size"5px"> 
+    </body>
+</html>
